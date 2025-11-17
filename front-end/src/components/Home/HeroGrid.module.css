@@ -1,0 +1,139 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.firstClass {
+  position: absolute;
+  top: -14px;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem 1.5rem;
+  animation: fadeInScale 1.2s ease forwards;
+  opacity: 0;
+}
+
+.mainIm {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transform: scale(0.9);
+  animation: zoomIn 1.2s ease forwards;
+  object-fit: cover;
+}
+
+.Feature1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  animation: slideDown 1s ease forwards;
+  opacity: 0;
+}
+
+.FeatureSec {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.FeatureCard {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.FeatureCard:nth-child(1) { animation-delay: 0.3s; }
+.FeatureCard:nth-child(2) { animation-delay: 0.5s; }
+.FeatureCard:nth-child(3) { animation-delay: 0.7s; }
+.FeatureCard:nth-child(4) { animation-delay: 0.9s; }
+
+.FeatureCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.FeatureCard:hover img {
+  transform: scale(1.05);
+}
+
+.FeatureText {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.FeatureCard:hover .FeatureText {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.secondClass {
+  display: grid;
+  margin-top: 33rem;
+  padding: 1rem 2rem;
+  top: -20rem;
+  position: relative;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 431px) {
+  .firstClass { padding: 2rem 1.5rem; }
+  .secondClass { top: 2rem; }
+  .Feature1 { font-size: 2rem; }
+}
+
+@media (min-width: 768px) {
+  .secondClass { top: -12rem; }
+}
+
+@media (min-width: 1024px) {
+  .secondClass { top: 10rem; }
+  .Feature1 { font-size: 2.2rem; }
+  .FeatureCard img { height: 300px; }
+}

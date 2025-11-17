@@ -1,0 +1,32 @@
+.cbtn {
+  border: 1px solid black;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;  
+  color: black;
+  cursor: pointer;
+  margin-left: 0px;
+  margin-right: 10px;
+  display: flex;
+  transition: 
+    background-color 0.3s ease, 
+    transform 0.3s ease;
+  position: relative;
+}
+
+.cbtn:hover {
+  background-color: #494949;
+  color: white;
+  transform: scale(0.9);
+  box-shadow: 0 2px 10px black;
+}
+
+.selected {
+  background-color: var(--primary-color);
+  color: black;
+  font-weight: bold;
+}
+
+.unselected {
+  background-color: white;
+  color: black;
+}

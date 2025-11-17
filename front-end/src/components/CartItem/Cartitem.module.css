@@ -1,0 +1,288 @@
+.cartitem {
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: none;
+}
+
+.cartitem {
+  background-color: #242424;
+  border-radius: 20px;
+  border-bottom: 1px solid #333;
+}
+
+
+.cartcontent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.imagecontainer {
+  flex-shrink: 0;
+}
+
+.cartimage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 20px;
+  background: #f8f8f8;
+}
+
+.productdetails {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 80px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.star {
+  font-size: 14px;
+  margin-right: 2px;
+  color: #ccc;
+}
+
+.starActive {
+  color: var(--primary-color);
+}
+
+.reviewCount {
+  margin-left: 5px;
+  font-size: 13px;
+  color: #dddddd;
+}
+
+.productinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.productname {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.productmeta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metaitem {
+  font-size: 14px;
+  color: #9b9b9b;
+  font-weight: 400;
+}
+
+.productprice {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 80px;
+  gap: 1rem;
+  margin-right: 10px;
+}
+
+.deletebutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 16px;
+  color: #ff4444;
+  transition: opacity 0.2s;
+  line-height: 1;
+}
+
+.deletebutton:hover {
+  opacity: 0.7;
+}
+
+.quantitycontrol {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: white;
+}
+
+.quantitybutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  min-width: 36px;
+  height: 36px;
+}
+
+.quantitybutton:hover:not(:disabled) {
+  background-color: #f8f8f8;
+}
+
+.quantitybutton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.quantity {
+  font-weight: 500;
+  font-size: 16px;
+  min-width: 32px;
+  text-align: center;
+  padding: 0 8px;
+  color: #1a1a1a;
+}
+
+/* --- Mobile Responsive abo --- */
+@media (max-width: 768px) {
+  .cartitem {
+    padding: 1.25rem 0;
+  }
+ 
+  .cartcontent {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .imagecontainer {
+    flex-shrink: 0;
+  }
+ 
+  .cartimage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .productdetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .productinfo {
+    width: 100%;
+    gap: 4px;
+  }
+
+
+  .productprice {
+    font-size: 17px;
+    margin-top: 0;
+    font-weight: 600;
+    order: 2; 
+  }
+
+  .productmeta {
+    order: 3;
+  }
+
+  .metaitem {
+    font-size: 13px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+
+  .actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    gap: 1rem;
+    margin-top: 0.75rem;
+    order: 4;
+  }
+ 
+  .productname {
+    font-size: 15px;
+    line-height: 1.3;
+    order: 1; 
+  }
+}
+
+@media (max-width: 480px) {
+  .cartitem {
+    padding: 1rem 0;
+  }
+
+  .cartcontent {
+    gap: 0.875rem;
+  }
+ 
+  .cartimage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .productdetails {
+    gap: 0.625rem;
+  }
+ 
+  .productname {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+ 
+  .productprice {
+    font-size: 16px;
+  }
+
+  .metaitem {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+ 
+  .quantitybutton {
+    padding: 6px 10px;
+    min-width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+ 
+  .quantity {
+    font-size: 14px;
+    min-width: 28px;
+  }
+
+  .actions {
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+}
