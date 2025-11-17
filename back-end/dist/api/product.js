@@ -1,0 +1,15 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = __importDefault(require("express"));
+var product_1 = require("../application/product");
+var productRouter = express_1.default.Router();
+productRouter.route('/').get(product_1.getAllProducts).post(product_1.createProduct);
+productRouter.route('/:id')
+    .get(product_1.getProductById)
+    .put(product_1.updateProductById)
+    .delete(product_1.deleteProductById);
+exports.default = productRouter;
+//# sourceMappingURL=product.js.map
