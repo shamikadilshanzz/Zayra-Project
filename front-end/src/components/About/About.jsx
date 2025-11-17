@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <div className={abo.imageContent}>
               <img 
-                src="../public/assets/Images/shop.jpg" 
+                src="/assets/Images/Products-Images/shop.jpg" 
                 className={abo.placeholderImage} 
                 alt="Zayra shop" 
               />
@@ -122,7 +122,7 @@ const About = () => {
               <div className={abo.memberImage}>
                 <span>CEO</span>
                 <img 
-                    src="../public/assets/Images/CEO.jpg" 
+                    src="/assets/Images/Products-Images/CEO.jpg" 
                     className={abo.memberImage} 
                     alt="Zayra shop" 
                 />
@@ -139,7 +139,7 @@ const About = () => {
               <div className={abo.memberImage}>
                 <span>CTO</span>
                 <img 
-                    src="../public/assets/Images/CTO.jpg" 
+                    src="/assets/Images/Products-Images/CTO.jpg" 
                     className={abo.memberImage} 
                     alt="Zayra shop" 
                 />
@@ -155,7 +155,7 @@ const About = () => {
               <div className={abo.memberImage}>
                 <span>COO</span>
                 <img 
-                    src="../public/assets/Images/COO.jpg" 
+                    src="/assets/Images/Products-Images/COO.jpg" 
                     className={abo.memberImage} 
                     alt="Zayra shop" 
                 />
