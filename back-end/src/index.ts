@@ -13,7 +13,14 @@ const app = express();
 
 app.use(express.json());
 app.use(clerkMiddleware());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({
+  origin: [
+    "http://localhost:5173", 
+    "https://zayra-project-wc4v.vercel.app" 
+  ],
+  credentials: true, 
+}));
+
 app.use("/api/products", productRouter);
 app.use("/api/categories", categoryRouter);
 app.use("/api/reviews", reviewRouter);

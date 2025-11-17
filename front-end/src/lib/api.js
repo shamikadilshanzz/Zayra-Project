@@ -1,10 +1,7 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
-
 export const Api = createApi({
   reducerPath: "Api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:8000/api",
+    baseUrl: import.meta.env.VITE_API_URL + "/api",
     prepareHeaders: async (headers) => {
       const clerk = window.Clerk;
 
@@ -45,10 +42,3 @@ export const Api = createApi({
     }),
   }),
 });
-
-export const { 
-  useGetAllProductsQuery, 
-  useCreateOrderMutation,
-  useCreateProductMutation,
-  useGetCategoriesQuery
-} = Api;

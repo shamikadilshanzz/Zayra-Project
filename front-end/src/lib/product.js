@@ -1,13 +1,4 @@
-export const getAllProducts = async (category) => {
-  const res = await fetch(`http://localhost:8000/api/products?category=${category}`, 
-    {
-      method: "GET",
-      headers: { "Content-Type" : "application/json"},
-
-  });
-
-  if (!res.ok) {
-    throw new Error("Error while fetching data");
-  }
-  return await res.json();
-};
+const res = await fetch(`${import.meta.env.VITE_API_URL}/api/products?category=${category}`, {
+  method: "GET",
+  headers: { "Content-Type": "application/json" },
+});
