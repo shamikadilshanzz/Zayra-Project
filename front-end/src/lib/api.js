@@ -1,7 +1,17 @@
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.DEV ? "http://localhost:8000" : "");
+
+if (!API_BASE_URL && import.meta.env.PROD) {
+  console.error(
+    "VITE_API_URL is not set. Please configure it in your Vercel environment variables."
+  );
+}
+
 export const Api = createApi({
   reducerPath: "Api",
   baseQuery: fetchBaseQuery({
-    baseUrl: import.meta.env.VITE_API_URL + "/api",
+    baseUrl: API_BASE_URL + "/api",
     prepareHeaders: async (headers) => {
       const clerk = window.Clerk;
 

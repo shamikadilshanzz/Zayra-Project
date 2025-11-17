@@ -1,4 +1,4 @@
-import { useGetAllProductsQuery } from "@/lib/api";
+import { useGetAllProductsQuery } from "@/lib/api"
 
 function ShopPage() {
   const { 
