@@ -4,7 +4,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart } from '@/lib/features/cartSlice';
 import { clearCurrentOrder } from '@/lib/features/orderSlice';
-import styles from './Payment.module.css';
+import styles from './payment.module.css';
 import Navigation from '@/components/Navigation/Navigation';
 
 const PaymentSuccess = ({ onClose, onContinueShopping }) => {
