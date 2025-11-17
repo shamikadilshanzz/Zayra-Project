@@ -6,7 +6,7 @@ var isAuthenticated = function (req, res, next) {
     if (req === null || req === void 0 ? void 0 : req.auth) {
         throw new unauthorized_error_1.UnauthorizedError("Unauthorized");
     }
-    console.log(req.auth());
+    console.log(req.auth);
     next();
 };
 exports.isAuthenticated = isAuthenticated;
