@@ -2,8 +2,6 @@
 
 A full-stack e-commerce web application built with modern technologies, featuring a sleek dark theme with vibrant green accents. Specializing in gaming and tech products.
 
-![Zayra Homepage](path/to/homepage-screenshot.png)
-
 ## 🚀 Features
 
 - **Product Catalog**: Browse trending products across multiple categories (Headphones, Phones, PCs, Laptops, Watches)
@@ -31,21 +29,18 @@ A full-stack e-commerce web application built with modern technologies, featurin
 - **Clerk** - User authentication and management
 
 ## 📸 Web Sampple Pages
-<img width="1919" height="996" alt="image" src="https://github.com/user-attachments/assets/e9050fb0-f0e0-433b-a8d7-da17f18da1bd" />
-<img width="1919" height="770" alt="image" src="https://github.com/user-attachments/assets/932c4d35-4b24-4d88-94bb-46a3afd3f607" />
-<img width="1919" height="992" alt="image" src="https://github.com/user-attachments/assets/85dd5a79-8747-40c9-bc46-3702db27c322" />
-<img width="1919" height="770" alt="image" src="https://github.com/user-attachments/assets/1bc86791-95ba-49f9-9055-5e333933967a" />
-<img width="1917" height="969" alt="image" src="https://github.com/user-attachments/assets/1dbc7041-21bb-46f9-9960-34468c5ee6bf" />
-<img width="1919" height="580" alt="image" src="https://github.com/user-attachments/assets/60bfa219-ea4a-48f2-8c95-d69287fe05a8" />
 
 ### Homepage - Trending Products
-![Homepage](path/to/homepage-screenshot.png)
-*Browse trending products with ratings and quick add-to-cart functionality*
+<img width="1919" height="996" alt="image" src="https://github.com/user-attachments/assets/e9050fb0-f0e0-433b-a8d7-da17f18da1bd" />
 
-### Checkout Page
-![Checkout](path/to/checkout-screenshot.png)
-*Secure checkout with order summary and multiple payment options*
+### Chekout-Page
+<img width="1919" height="770" alt="image" src="https://github.com/user-attachments/assets/932c4d35-4b24-4d88-94bb-46a3afd3f607" />
 
+### Support-Page
+<img width="1919" height="992" alt="image" src="https://github.com/user-attachments/assets/85dd5a79-8747-40c9-bc46-3702db27c322" />
+
+### PaymentSuccussfull-Page
+<img width="1917" height="969" alt="image" src="https://github.com/user-attachments/assets/1dbc7041-21bb-46f9-9960-34468c5ee6bf" />
 ## 🎨 Design Features
 
 - Clean, modern interface with dark theme
@@ -61,70 +56,9 @@ A full-stack e-commerce web application built with modern technologies, featurin
 - Node.js (v14 or higher)
 - MongoDB (local or Atlas)
 - npm or yarn
-
-### Setup
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/zayra-ecommerce.git
-cd zayra-ecommerce
-```
-
-2. **Install dependencies**
-```bash
-npm install
-```
-
-3. **Environment Variables**
-
-Create a `.env` file in the root directory:
-
-```env
-# MongoDB
-MONGODB_URI=your_mongodb_connection_string
-
-# Clerk Authentication
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=publishable_key
-CLERK_SECRET_KEY=secret_key
-
-4. **Run the development server**
-npm run dev
-```
-
-5. **Open your browser**
+- 
+**Web-Link**
 Navigate to `https://zayra-project-wc4v.vercel.app/`
-
-## 🗂️ Project Structure
-
-```
-zayra-ecommerce/
-  ├── src/
-  │   ├── components/
-  │   │   ├── ProductCard.tsx
-  │   │   ├── Navbar.tsx
-  │   │   ├── Cart.tsx
-  │   │   └── Checkout.tsx
-  │   ├── pages/
-  │   │   ├── index.tsx
-  │   │   ├── products/
-  │   │   └── checkout/
-  │   ├── styles/
-  │   │   └── globals.css
-  │   ├── lib/
-  │   │   ├── mongodb.ts
-  │   │   └── utils.ts
-  │   ├── types/
-  │   │   └── index.ts
-  │   └── api/
-  │       ├── products/
-  │       └── orders/
-  ├── public/
-  │   └── images/
-  ├── .env.example
-  ├── package.json
-  ├── tsconfig.json
-  └── tailwind.config.js
-```
 
 ## 🔐 Authentication
 
@@ -170,7 +104,7 @@ The application is fully responsive and optimized for:
 
 **Shamika Dilshan**
 - GitHub: [@shamikadilshanzz](https://github.com/shamikadilshanzz)
-- LinkedIn: [Shamika](www.linkedin.com/in/shamika-dilshan-193a4b268)
+- LinkedIn: [shamika-dilshan](www.linkedin.com/in/shamika-dilshan-193a4b268)
 - Email: shamikadilshan4562@gmail.com
 
 Made with ❤️ and ☕
