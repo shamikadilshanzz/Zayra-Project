@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { increaseQuantity, decreaseQuantity, removeFromCart } from "@/lib/features/cartSlice";
-import cartitemcss from "./CartItem.module.css";
+import cartitemcss from "./Cartitem.module.css";
 
 function CartItem({ item }) {
   const dispatch = useDispatch();
