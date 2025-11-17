@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import cartitemcss from "./CartItem.module.css";
+import cartitemcss from "./Cartitem.module.css";
 
 function CartItemCheckout({ item }) {
   const dispatch = useDispatch();
